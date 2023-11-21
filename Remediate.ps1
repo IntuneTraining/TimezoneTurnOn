@@ -37,7 +37,7 @@ Function Manage-Services {
 
 #region Process
 try {
-    Write-Host "Fixing TimeZone service statup type to MANUAL."
+    Write-Host "Fixing $ServiceName service startup type to $Action."
     Manage-Services -ServiceName $ServiceName -Action $Action
     Exit 0
 }
